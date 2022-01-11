@@ -1,0 +1,108 @@
+/* CSS RESET */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Main Section */
+
+.projectContainer {
+    padding: 0px 50px;
+}
+
+.projectContainer h1 {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 50px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #009879;
+}
+
+.projectTable {
+    border-collapse: collapse;
+    margin: 30px 0px;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.projectTable thead tr {
+    background: #009879;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.projectTable th,
+.projectTable td {
+    padding: 12px 15px;
+}
+
+.projectTable tbody tr {
+    border-bottom: 2px solid #dddddd;
+}
+
+.projectTable tbody tr:nth-of-type(even) {
+    background: #f3f3f3;
+}
+
+.projectTable tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.projectTable thead tr th {
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.projectTable tbody td a {
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    color: #009879;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.projectTable tbody td a::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    height: 2px;
+    width: 0;
+    left: 0px;
+    bottom: -8px;
+    transition: 0.3s;
+}
+
+.projectTable tbody td a:hover {
+    color: #090081;
+    transition: color 0.3s ease-in-out;
+}
+
+.projectTable tbody td a:hover::after {
+    width: 100%;
+}
+
+.projectTable tbody td h3 {
+    font-size: 20px;
+}
+
+.number {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.projectTable tbody td p {
+    font-size: 16px;
+    word-spacing: 1px;
+}

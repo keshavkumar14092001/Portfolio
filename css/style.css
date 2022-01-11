@@ -1,0 +1,1209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+/* CSS RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* First Container */
+
+.firstContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.firstContainer .slideBar {
+    width: 17vw;
+    height: 100vh;
+    background: #047aed;
+    padding: 40px;
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    border-top: 5px solid #fff;
+    transform: translate(-261px, 0px);
+    position: absolute;
+    z-index: 100;
+    transition: transform 0.3s ease-in-out;
+}
+
+.firstContainer .slideBarCome {
+    transform: translate(0px, 0px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.firstContainer .profileContainer {
+    width: 100vw;
+    background: url(../Img/home_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* SlidBar */
+
+.firstContainer .slideBarCome nav ul {
+    position: relative;
+}
+
+#cross {
+    position: absolute;
+    top: -100px;
+    right: -20px;
+}
+
+#cross:hover {
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.firstContainer .slideBar nav ul li {
+    list-style: none;
+    text-decoration: none;
+    margin: 73px 0px;
+}
+
+.firstContainer .slideBar nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #eff2f9;
+    font-size: 25px;
+    position: relative;
+}
+
+.firstContainer .slideBar nav ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    width: 0;
+    left: 0px;
+    bottom: -8px;
+    transition: 0.3s;
+}
+
+.firstContainer .slideBar nav ul li a:hover {
+    color: #000;
+    transition: color 0.3s ease-in-out;
+}
+
+.firstContainer .slideBar nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Profile Container */
+
+.profileContainer .infoContainer {
+    background: #000000;
+    width: 70vw;
+    height: 70vh;
+    margin: 91px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+/* Profile Image */
+
+.profileContainer .infoContainer .profilePic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+}
+
+.profileContainer .infoContainer .profilePic img {
+    width: 55%;
+    border-radius: 50%;
+    border: 5px solid #ef8a8a;
+    box-shadow: 0px 0px 10px 10px rgb(225 225 230 / 50%);
+}
+
+/* Profile Text */
+
+.profileContainer .infoContainer .profile {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.greetings {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.introduction {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.profileText {
+    padding: 10px 0px;
+    padding-right: 10px;
+}
+
+.profileText p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #9ff6f6;
+}
+
+.name h1 {
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.post h2 {
+    font-size: 25px;
+    color: navajowhite;
+}
+
+/* Buttons Section */
+
+.buttons {
+    margin-top: 5px;
+}
+
+.button1 {
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: normal;
+    border-radius: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    border: 3px solid #fff;
+    --background-color: #000;
+}
+
+.button2 {
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.button1:hover {
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
+    font-size: 20px;
+    transition: background 1s ease-in-out;
+}
+
+.button2:hover {
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
+    font-size: 20px;
+    transition: background 1s ease-in-out;
+}
+
+/* Contact Page */
+
+.firstContainer .contactContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), #3551b5), url('../Img/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contactContainer h1 {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+}
+
+.input {
+    margin-bottom: 33px;
+    position: relative;
+}
+
+input, textarea {
+    width: 100%;
+    outline: none;
+    border: 3px solid #fff;
+    color: #fff;
+    background: transparent;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    border-radius: 20px;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 10px;
+    color: #fff;
+    height: 100%;
+    cursor: text;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn button {
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    border: 3px solid #fff;
+    color: #fff;
+    background: transparent;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    border-radius: 20px;
+}
+
+.btn button:hover {
+    background: #fff;
+    color: #000;
+    border: 3px solid #000;
+    transition: background 0.3s ease-in-out;
+}
+
+input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label {
+    top: -40px;
+    font-size: 14px;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group .input {
+    flex-basis: 48%;
+}
+
+/* Project Section */
+
+.projectContainer {
+    padding: 0px 50px;
+}
+
+.projectContainer h1 {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 50px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #009879;
+}
+
+.projectTable {
+    border-collapse: collapse;
+    margin: 30px 0px;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.projectTable thead tr {
+    background: #009879;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.projectTable th,
+.projectTable td {
+    padding: 12px 15px;
+}
+
+.projectTable tbody tr {
+    border-bottom: 2px solid #dddddd;
+}
+
+.projectTable tbody tr:nth-of-type(even) {
+    background: #f3f3f3;
+}
+
+.projectTable tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.projectTable thead tr th {
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+.projectTable tbody td a {
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    color: #009879;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.projectTable tbody td a::after {
+    content: "";
+    position: absolute;
+    background-color: #000;
+    height: 2px;
+    width: 0;
+    left: 0px;
+    bottom: -8px;
+    transition: 0.3s;
+}
+
+.projectTable tbody td a:hover {
+    color: #090081;
+    transition: color 0.3s ease-in-out;
+}
+
+.projectTable tbody td a:hover::after {
+    width: 100%;
+}
+
+.projectTable tbody td h3 {
+    font-size: 20px;
+}
+
+.number {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.projectTable tbody td p {
+    font-size: 16px;
+    word-spacing: 1px;
+}
+
+/* Blog Page */
+
+.firstContainer .blogContainer {
+    width: 100vw;
+    height: 100vh;
+    background: url(../Img/blog_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blogMainContainer {
+    width: 55vw;
+    margin: 100px auto;
+    background: #ccc;
+    padding: 35px 40px;
+    border-radius: 20px;
+}
+
+.blogContainer h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.blogContainer p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3f2703;
+}
+
+.blogContainer a {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogContainer a button {
+    width: 23vw;
+    text-align: center;
+    margin: 10px auto;
+    outline: none;
+    background: black;
+    color: white;
+    border: 3px solid white;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    cursor: pointer;
+}
+
+.blogContainer a button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #000;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Skill Container */
+
+.firstContainer .skillContainer {
+    width: 100vw;
+    background: url(../Img/skill_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px 20px;
+}
+
+.skillContainer .skill {
+    border: 5px solid #000;
+    width: 236px;
+    height: 180px;
+    margin: 10px auto;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.skillContainer .skill:hover {
+    border-color: rgb(163, 21, 163);
+    transition: border-color 0.3s ease-in-out;
+}
+
+.skill img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+/* Footer Section */
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #050404;
+}
+
+.footer p {
+    color: #93c9ff;
+    padding: 10px 0px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.footerIcons a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.footerIcons a i {
+    padding: 0px 10px;
+    color: #93c9ff;
+}
+
+.footerIcons a i:hover {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hamburgur Section */
+
+#ham {
+    position: absolute;
+    color: white;
+    top: 10px;
+    left: 5px;
+    cursor: pointer;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#ham:hover {
+    color: #047aed;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Making Portfolio Responsive */
+
+@media (max-width: 1290px) {
+
+    .firstContainer .slideBar {
+        width: 22vw;
+        transform: translate(-282px, 0px);
+    }
+
+    .firstContainer .slideBarCome {
+        transform: translate(0px, 0px);
+    }
+
+    .blogMainContainer {
+        margin: 175px auto;
+    }
+}
+
+@media (max-width: 1030px) {
+
+    .firstContainer .slideBar {
+        width: 22vw;
+    }
+
+    .profileContainer .infoContainer {
+        width: 70vw;
+        height: 80vh;
+        margin: 60px auto;
+    }
+
+    .skillContainer .skill {
+        width: 180px;
+        height: 160px;
+    }
+
+    .blogMainContainer {
+        width: 61vw;
+        margin: 62px auto;
+    }
+
+    .blogContainer a button {
+        width: 54vw;
+    }
+}
+
+@media (max-width: 920px) {
+
+    /* Slide Bar */
+
+    .firstContainer .slideBar {
+        width: 40vw;
+        transform: translate(-365px, 0px);
+    }
+
+    .firstContainer .slideBarCome {
+        transform: translate(0px, 0px);
+    }
+
+    .firstContainer .slideBar nav ul li {
+        margin: 80px 45px;
+    }
+
+    .firstContainer .slideBar nav ul li a {
+        font-size: 30px;
+    }
+
+    /* Index Page */
+
+    .profileContainer .infoContainer {
+        width: 90vw;
+        height: 60vh;
+        margin: 236px auto;
+    }
+
+    .profileContainer .infoContainer .profilePic {
+        width: 35vw;
+    }
+
+    .profileContainer .infoContainer .profilePic img {
+        width: 95%;
+    }
+
+    .button1 {
+        font-size: 19px;
+        margin-top: 10px;
+    }
+
+    .button2 {
+        font-size: 19px;
+        margin-top: 10px;
+    }
+
+    .greetings {
+        font-size: 20px;
+    }
+
+    .introduction {
+        font-size: 25px;
+    }
+
+    .profileText p {
+        font-size: 16px;
+    }
+
+    .name h1 {
+        font-size: 45px;
+    }
+
+    .post h2 {
+        font-size: 24px;
+    }
+
+    /* Skill Page */
+
+    .skillContainer .skill {
+        margin-top: 90px;
+        margin-bottom: 0px;
+    }
+
+    /* Contact Page */
+
+    label {
+        padding: 15px 25px;
+        font-size: 25px;
+    }
+
+    input, textarea {
+        font-size: 30px;
+        padding: 10px 10px;
+    }
+
+    .contactContainer h1 {
+        font-size: 80px;
+    }
+
+
+    .input {
+        margin-bottom: 55px;
+    }
+
+    /* Footer Page */
+
+    .footer {
+        flex-direction: column;
+        padding: 10px 0px;
+        height: 120px;
+    }
+
+    .footer p {
+        padding: 15px 0px;
+        font-size: 27px;
+        padding-bottom: 5px;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .firstContainer .slideBar {
+        width: 35vw;
+        transform: translate(-288px, 0px);
+    }
+
+    .firstContainer .slideBarCome {
+        transform: translate(0px, 0px);
+    }
+
+    .firstContainer .slideBar nav ul li a {
+        font-size: 30px;
+    }
+
+    /* Index Page */
+
+    .profileContainer .infoContainer {
+        width: 90vw;
+        height: 60vh;
+        margin: 236px auto;
+    }
+
+    .profileContainer .infoContainer .profilePic {
+        width: 35vw;
+    }
+
+    .profileContainer .infoContainer .profilePic img {
+        width: 95%;
+    }
+
+    .button1 {
+        font-size: 19px;
+        margin-top: 10px;
+    }
+
+    .button2 {
+        font-size: 19px;
+        margin-top: 10px;
+    }
+
+    .greetings {
+        font-size: 20px;
+    }
+
+    .introduction {
+        font-size: 25px;
+    }
+
+    .profileText p {
+        font-size: 16px;
+    }
+
+    .name h1 {
+        font-size: 42px;
+    }
+
+    .post h2 {
+        font-size: 24px;
+    }
+
+    /* Skill Page */
+
+    .skillContainer .skill {
+        margin-top: 90px;
+        margin-bottom: 0px;
+    }
+
+    /* Blog Page */
+
+    .blogMainContainer {
+        width: 85vw;
+        margin: 350px auto;
+    }
+
+    .blogContainer p {
+        font-size: 23px;
+    }
+
+    .blogContainer a button {
+        width: 75vw;
+        margin: 20px auto;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    /* Contact Page */
+
+    label {
+        padding: 15px 25px;
+        font-size: 25px;
+    }
+
+    input, textarea {
+        font-size: 30px;
+        padding: 10px 10px;
+    }
+
+    .contactContainer h1 {
+        font-size: 80px;
+    }
+
+
+    .input {
+        margin-bottom: 55px;
+    }
+
+    /* Footer Section */
+
+    .footer {
+        flex-direction: column;
+        padding: 10px 0px;
+        height: 120px;
+    }
+
+    .footer p {
+        padding: 15px 0px;
+        font-size: 25px;
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 770px) {
+    .profileText p {
+        font-size: 15px;
+    }
+
+    .name h1 {
+        font-size: 40px;
+    }
+
+    .post h2 {
+        font-size: 22px;
+    }
+
+    .button1 {
+        font-size: 17px;
+    }
+
+    .button2 {
+        font-size: 17px;
+    }
+
+    .footer p {
+        padding: 15px 0px;
+        font-size: 24px;
+        padding-bottom: 5px;
+    }
+
+    .blogMainContainer {
+        width: 85vw;
+        margin: 226px auto;
+    }
+}
+
+@media (max-width: 550px) {
+
+    /* Slide Bar */
+
+    .firstContainer .slideBar nav ul li a {
+        font-size: 25px;
+    }
+
+    .firstContainer .slideBar {
+        width: 50vw;
+    }
+
+    /* Index Page */
+
+    .profileContainer .infoContainer {
+        margin: 145px auto;
+    }
+
+    .profileText p {
+        font-size: 10px;
+    }
+
+    .greetings {
+        font-size: 14px;
+    }
+
+    .introduction {
+        font-size: 20px;
+    }
+
+    .name h1 {
+        font-size: 28px;
+    }
+
+    .post h2 {
+        font-size: 16px;
+    }
+
+    .button1 {
+        font-size: 10px;
+    }
+
+    .button2 {
+        font-size: 10px;
+    }
+
+    /* Skill Page */
+
+    .skillContainer .skill {
+        width: 120px;
+        height: 100px;
+    }
+
+    /* Blog Page */
+
+    .blogMainContainer {
+        width: 80vw;
+        margin: 91px auto;
+    }
+
+    .blogContainer p {
+        font-size: 17px;
+    }
+
+    .blogContainer a button {
+        font-size: 20px;
+    }
+
+    /* Contact Page */
+
+    .firstContainer .contactContainer {
+        height: 720px;
+    }
+
+    label {
+        padding: 10px 10px;
+        font-size: 16px;
+    }
+
+    input, textarea {
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+
+    .contactContainer h1 {
+        font-size: 50px;
+    }
+
+    .input {
+        margin-bottom: 33px;
+    }
+
+    /* Footer Page */
+    .footer {
+        height: 120px;
+    }
+
+    .footer p {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+}
+
+/* For Mobile */
+
+@media (max-width: 420px) {
+
+    /* For Index Page */
+
+    .firstContainer .slideBar nav ul li {
+        margin: 75px 45px;
+    }
+
+    .firstContainer {
+        height: 900px;
+    }
+
+    .firstContainer .profileContainer {
+        width: 100vw;
+    }
+
+    .profileContainer .infoContainer {
+        flex-direction: column;
+        width: 80vw;
+        height: 500px;
+        margin: 200px auto;
+    }
+
+    .firstContainer .slideBar {
+        width: 69vw;
+    }
+
+    .button1 {
+        font-size: 16px;
+    }
+
+    .button2 {
+        font-size: 16px;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: 85px;
+    }
+
+    .footer p {
+        font-size: 13px;
+        padding: 0px 2px;
+        letter-spacing: 0px;
+        padding-bottom: 10px;
+    }
+
+    .profileContainer .infoContainer .profilePic {
+        width: 45vw;
+    }
+
+    .profileContainer .infoContainer .profilePic img {
+        width: 100%;
+    }
+
+    .profileContainer .infoContainer .profile {
+        width: 67vw;
+    }
+
+    .greetings {
+        font-size: 14px;
+    }
+
+    .introduction {
+        font-size: 14px;
+    }
+
+    .profileText {
+        padding: 0px 0px;
+        padding-right: 0px;
+    }
+
+    .profileText p {
+        display: none;
+    }
+
+    .name h1 {
+        font-size: 35px;
+    }
+
+    .post h2 {
+        font-size: 18px;
+    }
+
+    /* For Skill Page */
+
+    .firstContainer .skillContainer {
+        width: 100vw;
+        height: 900px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px 0px;
+    }
+
+    .skillContainer .skill {
+        width: 100px;
+        height: 100px;
+        margin: 0px auto;
+        margin-top: 65px;
+        margin-bottom: 0px;
+    }
+
+    /* Blog Page */
+
+    .firstContainer .blogContainer {
+        height: 900px;
+    }
+
+    .blogMainContainer {
+        width: 90vw;
+        margin: 177px auto;
+        padding: 20px 10px;
+    }
+
+    .blogContainer p {
+        padding: 5px 5px;
+        font-size: 18px;
+    }
+
+    .blogContainer a button {
+        width: 80vw;
+        margin: 20px auto;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    /* Contact Page */
+
+    .firstContainer .contactContainer {
+        height: 900px;
+    }
+
+    label {
+        padding: 10px 10px;
+        font-size: 16px;
+    }
+
+    input, textarea {
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+
+    .contactContainer h1 {
+        font-size: 50px;
+    }
+
+    .input {
+        margin-bottom: 33px;
+    }
+}
+
+@media (max-width: 370px) {
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .button1 {
+        font-size: 15px;
+    }
+
+    .button2 {
+        font-size: 15px;
+    }
+}
+
+/* Making Table Responsive */
+
+@media (max-width: 830px) {
+    .projectTable tbody td p {
+        font-size: 13px;
+        word-spacing: 0px;
+    }
+
+    .projectTable th, .projectTable td {
+        padding: 12px 10px;
+    }
+
+    .projectTable tbody td h3 {
+        font-size: 15px;
+    }
+
+    .projectTable tbody td a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:500px) {
+
+    .projectContainer table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .projectContainer h1 {
+        font-size: 30px;
+    }
+
+    .projectContainer {
+        padding: 0px 20px;
+    }
+
+    .projectTable th, .projectTable td {
+        padding: 10px 15px;
+    }
+
+    .projectTable td {
+        padding: 10px 15px;
+    }
+
+    .projectTable tbody td h3 {
+        font-size: 10px;
+    }
+
+    .projectTable thead tr th {
+        font-size: 10px;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+
+    .number {
+        font-size: 10px;
+    }
+
+    .projectTable tbody td a {
+        font-size: 10px;
+    }
+
+    .projectTable tbody td p {
+        font-size: 10px;
+        word-spacing: 0px;
+    }
+
+    .projectTable {
+        border-radius: 20px 20px 20px 20px;
+    }
+}
