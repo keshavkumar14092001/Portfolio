@@ -29,7 +29,11 @@
         </div>
         <div class="contactContainer">
             <h1>Contact Me</h1>
-            <form action="/index.html">
+            <form action="/index.html" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+                <p class="hidden">
+                    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                </p>
                 <div class="group">
                     <div class="input">
                         <input type="text" name="name" id="name" required>
@@ -60,7 +64,8 @@
             <p>kk@tech.pvt.ltd || Copyright &copy; 2022 || All Rights Reserved!!!</p>
         </div>
         <div class="footerIcons">
-            <a href="https://www.linkedin.com/in/keshav-kumar-6b0789222/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/keshav-kumar-6b0789222/" target="_blank"><i
+                    class="fab fa-linkedin-in fa-2x"></i></a>
             <a href="https://github.com/keshavkumar14092001" target="_blank"><i class="fab fa-github fa-2x"></i></a>
         </div>
     </footer>

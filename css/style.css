@@ -9,6 +9,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.hidden {
+    visibility: hidden;
+    height: 0px;
+}
+
 /* First Container */
 
 .firstContainer {
