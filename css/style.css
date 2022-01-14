@@ -980,7 +980,7 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
     /* For Index Page */
 
     .firstContainer .slideBar nav ul li {
-        margin: 75px 45px;
+        margin: 70px 10px;
     }
 
     .firstContainer {
@@ -1003,11 +1003,11 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
     }
 
     .button1 {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .button2 {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .footer {
